@@ -1,0 +1,3 @@
+- tạo ra entity -> tạo ra database tương ứng với entity -> tạo ra page home -> tạo ra page registion -> tạo ra page signed up successfully, click vào để login
+- dựa vào spring security để tạo page login -> tạo ra class customUserDetails implements UserDetails để required to login ->
+tạo CustomUserDetailsService implements UserDetailsService để perform authentication, perform login -> Tạo WebSecurityConfig
