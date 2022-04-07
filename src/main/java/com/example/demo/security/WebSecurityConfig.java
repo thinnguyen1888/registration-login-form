@@ -49,7 +49,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http.authorizeRequests()
-        .antMatchers("/list-user").authenticated()
+        .antMatchers("/list-user").authenticated() //required to log in
         .anyRequest().permitAll()
         .and()
         .formLogin().usernameParameter("email").defaultSuccessUrl("/list-user").permitAll()
